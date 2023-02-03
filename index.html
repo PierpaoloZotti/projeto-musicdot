@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,&display=block">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/cabelhaço.css">
         <link rel="icon" href="img/favicon.ico">
         <meta charset="UTF-8">
-        <meta name="viewport" width="device-width" initial-scale="1.0">
+        <meta name="viewport" width="device-width">
         <title>MusicDot</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,&display=block">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/cabecalho.css">
+        <link rel="stylesheet" href="css/container.css">
+        <link rel="stylesheet" href="css/rodape.css">
     </head>
     <body>
-        <header class="cabeçalho">
+        <header class="cabecalho">
             <!-- Conteudo cabelhaço -->
             <a href="index.html">
-            <img src="img/musicdot-logo-light.svg" alt="Logo da MusicDot">
+            <img class="cabecalho__logo" src="img/musicdot-logo-light.svg" alt="Logo da MusicDot" title="Ir  para a página principal da Musicdot">
             </a>
             <nav>
-                <ul>
-                    <li><a href="sobre.html#contato">Contato</a></li>
-                    <li><a href="#">Entrar</a></li>
-                    <li><a href="#">Matricula-se</a></li>
+                <ul class="cabecalho__menu">
+                    <li class="cabecalho__item-menu"><a  href="sobre.html#contato">Contato</a></li>
+                    <li class="cabecalho__item-menu"><a  href="#">Entrar</a></li>
+                    <li class="cabecalho__item-menu cabecalho__item-menu--matricular"><a  href="#">Matricula-se</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,8 +29,81 @@
             <!-- Conteudo principal -->
         </main>
        
-        <footer>
+        <footer class="rodape"> 
             <!-- Conteudo rodape -->
+            
+            <section class="rodepe__secao rodape__secao--sobre">
+                <img class="rodape__logo" src="img/logo.svg" alt="logo musicdot">
+                <p class="rodape__infos-empresa">AOVS Sistema de informatica SA
+                    <br>
+                    CNPJ 05.555.382/0001-33
+                    <br>
+                    Rua Vergueiro-São Paulo/SP
+                    <br>
+                    Telefone (11)4118-3319
+                </p>
+            
+             
+                <ul class="rodape__lista-midias-sociais">
+                    <li class="rodape__item-midias-sociais">
+                        <a	href="https://www.facebook.com/musicdotonline">
+                            <img src="img/footer-icone-facebook.svg" alt="pagina facebook">
+                        </a>
+                    </li>
+                    <li class="rodape__item-midias-sociais">
+                        <a href="https://www.youtube.com/user/musicdotonline">
+                            <img src="img/footer-icone-youtube.svg" alt="pagina youtube">
+                        </a>
+                    </li>
+                    <li class="rodape__item-midias-sociais">
+                        <a href="https://www.instagram.com/musicdotonline/">
+                            <img src="img/footer-icone-instagram.svg" alt="pagina instagram">
+                        </a>
+                    </li>
+                </ul>    
+            </section>
+
+            <section class="rodape__secao rodape__secao--cursos">
+                <h3 class="rodape__titulo">CURSOS DA MUSICDOT</h3>
+                <nav>
+                    <ul>
+                        <li class="rodape__item-lista"><a href="#">Curso de Teclado e Piano</a></li>
+                        <li class="rodape__item-lista"><a href="#">Curso de Violão/Guitarra</a></li>
+                        <li class="rodape__item-lista"><a href="#">Curso de Baixo</a></li>
+                        <li class="rodape__item-lista"><a href="#">Curso de Bateria</a></li>
+                        <li class="rodape__item-lista"><a href="#">Curso de Percussão</a></li>
+                        <li class="rodape__item-lista"><a href="#">Curso de Canto</a></li>
+                        <li class="rodape__item-lista"><a href="#">Curso de Audio</a></li>
+                        <li class="rodape__item-lista"><a href="#">Curso de Teoria</a></li>
+                        <li class="rodape__item-lista"><a href="#">Curso de Sopro</a></li>
+                        <li class="rodape__item-lista"><a href="#">Curso de Cordas</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="rodape__secao rodape__secao--links">
+                <h3 class="rodape__titulo">MUSICDOT</h3>
+                <nav>
+                    <ul>
+                        <li class="rodape__item-lista"><a href="#">Apostila</a></li>
+                        <li class="rodape__item-lista"><a href="#">E-Book</a></li>
+                        <li class="rodape__item-lista"><a href="#">Login</a></li>
+                        <li class="rodape__item-lista"><a href="#">Matricula-se</a></li>
+                        <li class="rodape__item-lista"><a href="#">Perguntas frequentes</a></li>
+                        <li class="rodape__item-lista"><a href="#">Para Escolas</a></li>
+                        <li class="rodape__item-lista"><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="rodape__secao rodape__secao--newsletter">
+                <h3 class="rodape__titulo">RECEBA NOVIDADE E LANÇAMENTOS</h3>
+                    <form action="#" method="get" class="form-newsletter">
+                        <label for="form-newsletter__label" class="form-newsletter__label">
+                            Sua email pessoal
+                        </label>
+                        <input class="form-newsletter__campo" type="email" name="email-newsletter" id="email-newsletter">
+                        <button class="form-newsletter__botao" type="submit">OK</button>
+                    </form>
+            </section>
         </footer>
     </body>
 </html>
